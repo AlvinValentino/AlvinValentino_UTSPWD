@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0b0707;
+}
+
+.main {
+    padding: 5rem 2rem;
+}
+
+.main-contact {
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    gap: 10rem;
+}
+
+.main-contact .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.main-contact .contact h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main-contact .contact .sub-contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.main-contact .contact .sub-contact a {
+    display: flex;
+    color: #0b0707;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+.main-contact .contact .sub-contact a p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-contact .contact .sub-contact a i {
+    margin: auto 0;
+}
+
+.main-contact .feedback {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.main-contact .feedback div p {
+    font-weight: 500;
+}
+
+.main-contact .feedback div input, textarea {
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.8rem;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #a4b0be;
+    font-family: 'Poppins', sans-serif;
+    color: #495057;
+    resize: none;
+}
+
+.main-contact .feedback button {
+    padding: 0.7rem;
+    font-size: 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: #A33030;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .main-contact {
+        flex-direction: column;
+        gap: 5rem !important;
+    }
+}

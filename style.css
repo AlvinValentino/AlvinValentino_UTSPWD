@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.content .content-text {
+  max-width: 90rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.content .welcome-text {
+  color: #0b0707;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .welcome-text div {
+  border-left: 7px solid #0b0707;
+  padding: 0 30px;
+}
+
+.content .welcome-text .title {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.content .welcome-text .subtitle {
+  font-size: 25px;
+}
+
+.content .ini-saya {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content .welcome-text {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content .ini-saya {
+    margin-bottom: 100px;
+  }
+}

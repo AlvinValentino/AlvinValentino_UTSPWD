@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontak.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>alvinvn | Kontak</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <p class="nav-logo">alvinvn</p>
+            <div class="nav-link">
+                <a href="/index.html">Beranda</a>
+                <div class="jelajahi">
+                    <label for="check-jelajahi">Jelajahi</label>
+                    <input type="checkbox" id="check-jelajahi" name="jelajahi-menu">
+                    <div class="jelajahi-dropdown">
+                        <p>Universitas</p>
+                        <p>Prodi</p>
+                        <p>Projek</p>
+                        <p>Hobi</p>
+                    </div>
+                </div>
+                <a href="/kontak.html" class="active">Kontak</a>
+                <a href="/about.html">Tentang Saya</a>
+            </div>
+            <div class="nav-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main-contact">
+            <div class="contact">
+                <h1>Kontak Saya</h1>
+                <div class="sub-contact">
+                    <a href="https://wa.me/6285179651625" target="_blank">
+                        <i class="fa fa-brands fa-whatsapp fa-lg"></i>
+                        <p>0851-7965-1625</p>
+                    </a>
+                    <a href="mailto:alvinvlntino@gmail.com" target="_blank">
+                        <i class="fa fa-regular fa-inbox fa-lg"></i>
+                        <p>alvinvlntino@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+            <form class="feedback">
+                <div>
+                    <p>Nama</p>
+                    <input type="text" name="name" id="name" placeholder="Masukkan namanya dong bro/sis..." required>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="email" name="email" id="email" placeholder="Masukkan emailnya dong bro/sis..." required>
+                </div>
+                <div>
+                    <p>Pesan</p>
+                    <textarea name="pesan" id="pesan" placeholder="Masukkan pesan saudara-saudara dong..." rows="5" required></textarea>
+                </div>
+                <button type="submit">Meluncur...</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
