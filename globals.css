@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0b0707;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -30,7 +43,7 @@ nav .nav-icon {
   font-size: 22px;
 }
 
-nav .nav-link a, label {
+nav .nav-link a, p {
   color: #272727;
   font-weight: 500;
   text-decoration: none;
@@ -38,8 +51,12 @@ nav .nav-link a, label {
   cursor: pointer;
 }
 
-nav .active {
+nav .active, .jelajahi-active {
   color: #A33030 !important;
+}
+
+nav .jelajahi-active {
+  border-left: 4px solid #A33030 !important;
 }
 
 nav .nav-link a:hover {
@@ -57,7 +74,7 @@ nav .nav-link .jelajahi input {
 
 nav .nav-link .jelajahi .jelajahi-dropdown {
   display: none;
-  top: 1.8rem;
+  top: 1.7rem;
   position: absolute;
   z-index: 1;
   background-color: white;
@@ -67,13 +84,21 @@ nav .nav-link .jelajahi .jelajahi-dropdown {
   min-width: 15rem;
 }
 
-nav .nav-link .jelajahi .jelajahi-dropdown p {
+nav .nav-link .jelajahi .jelajahi-dropdown a {
   border-bottom: 1px solid #a4b0be;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: #272727;
+  cursor: pointer;
 }
 
-nav .nav-link #check-jelajahi:checked~.jelajahi-dropdown, #check-jelajahi:hover~.jelajahi-dropdown {
-  display: block;
+nav .nav-link .jelajahi:hover .jelajahi-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .nav-link .jelajahi .jelajahi-dropdown a:hover {
+  border-left: 4px solid #A33030;
 }
 
 @media only screen and (max-width: 700px) {

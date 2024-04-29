@@ -1,16 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  overflow: hidden;
-}
-
+@import url('./globals.css');
 .content {
   width: 100%;
   padding: 0 1.5rem;
