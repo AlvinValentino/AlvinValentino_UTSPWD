@@ -1,5 +1,9 @@
 @import url('./globals.css');
 
+body {
+  overflow: hidden;
+}
+
 .content {
   width: 100%;
   padding: 0 1.5rem;

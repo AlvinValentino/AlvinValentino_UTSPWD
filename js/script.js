@@ -1,17 +1,27 @@
-const navbar = document.querySelector("nav");
+const element = document.querySelector('nav');
 
 window.addEventListener("scroll", function () {
   if (this.scrollY > 50) {
-    navbar.classList.add("active");
+    element.classList.add('shadow');
   } else {
-    navbar.classList.remove("active");
+    element.classList.remove('shadow');
   }
 });
 
 window.addEventListener('DOMContentLoaded' , function() {
     if(this.scrollY < 50) {
-       navbar.classList.remove('active');
+       element.classList.remove('shadow');
     } else {
-       navbar.classList.add('active');
+       element.classList.add('shadow');
     }
 })
+
+function clickMenu() {
+  const menuNav = document.getElementById('menu')
+
+  if(menuNav.style.display == 'flex') {
+    menuNav.style.display = 'none'
+  } else {
+    menuNav.style.display = 'flex'
+  }
+}

@@ -14,6 +14,41 @@
     font-size: 26px;
 }
 
+.content .projek .projek-saya {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content .projek .projek-saya .project-content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
+    border-radius: 6px;
+    max-width: 20rem;
+    border-bottom: 5px solid #A33030;
+    cursor: pointer;
+}
+
+.content .projek .projek-saya .project-content div {
+    padding: 1rem 2rem;
+    border-top: 1px solid #A8A8A8;
+}
+
 .content .projek .projek-saya div img {
-    width: 400px;
+    width: 100%;
+}
+
+.content .projek .projek-saya div h3 {
+    font-size: 16px;
+}
+
+.content .projek .projek-saya div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 700px) {
+    .content .projek .projek-saya {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
