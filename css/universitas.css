@@ -1,0 +1,44 @@
+@import url('./globals.css');
+
+.main {
+    padding: 2rem;
+}
+
+.main .content {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.main .content h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main .content .sub-content img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.main .content .sub-content .description {
+    margin: 1.3rem 0;
+}
+
+.main .content .sub-content .description p {
+    font-weight: 400;
+    cursor: auto;
+    font-size: 16px;
+}
+
+.main .content .sub-content .dosen {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .main .content .sub-content .dosen {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,97 @@
+@import url('./globals.css');
+
+.main {
+    padding: 2rem;
+}
+
+.main .content {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.main .content h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main .content .sub-content {
+    border-bottom: 1px solid #a4b0be;
+    padding-bottom: 3rem;
+}
+
+.main .content .sub-content img {
+    width: 40%;
+    border-radius: 7px;
+}
+
+.main .content .sub-content .content-sub {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.main .content .sub-content .isi {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main .content .sub-content .description {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    border-left: 5px solid #A33030;
+    flex-direction: column;
+}
+
+.main .content .pendidikan {
+    padding: 2rem 0;
+}
+
+.main .content .pendidikan .sub-pendidikan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.main .content .pendidikan .sub-pendidikan .masa img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.main .content .pendidikan .sub-pendidikan .masa {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    border-left: 5px solid #A33030;
+    gap: 2rem;
+}
+
+.main .content .pendidikan .sub-pendidikan .masa div h3 {
+    font-size: 16px;
+}
+
+.main .content .pendidikan .sub-pendidikan .masa div p {
+    font-size: 14px;
+    color: #495057;
+}
+
+@media only screen and (max-width: 700px) {
+    .main .content .sub-content .content-sub {
+        flex-direction: column;
+    }
+
+    .main .content .sub-content img {
+        width: 100%;
+    }
+
+    .main .content .pendidikan .sub-pendidikan {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
